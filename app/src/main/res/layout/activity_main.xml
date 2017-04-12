@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.bdclass24.cameraapp.MainActivity">
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        >
+       <LinearLayout
+           android:layout_width="match_parent"
+           android:layout_height="match_parent"
+           android:orientation="vertical"
+           android:gravity="center">
+
+          <ImageView
+              android:id="@+id/prescriptionImage"
+              android:layout_width="match_parent"
+              android:layout_height="290dp"
+              android:src="@drawable/rxphoto"
+              android:layout_marginTop="20dp"
+              android:layout_margin="20dp"/>
+
+          <Button
+              android:id="@+id/takePhoto"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:text="Take Photo"
+              android:textAllCaps="false"
+              android:textColor="#fff"
+              android:background="@color/colorAccent"
+              android:textSize="20sp"
+              android:layout_margin="10sp"
+              android:onClick="take_Photo"
+
+              />
+
+       </LinearLayout>
+
+    </ScrollView>
+
+</LinearLayout>
